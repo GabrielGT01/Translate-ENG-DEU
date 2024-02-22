@@ -22,7 +22,7 @@ def main():
         if st.button("Translate"):
 
         # Perform inference using the loaded model
-           result = eng-deu(input_text)
+           result = eng(input_text)
            st.write("Translated text :", result[0]['translation_text'])
 
 
@@ -34,7 +34,7 @@ def main():
         if st.button("Translate"):
 
         # Perform inference using the loaded model
-           result = deu-eng(input_text)
+           result = deu(input_text)
            st.write("Translated text :", result[0]['translation_text'])
 
 
