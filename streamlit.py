@@ -7,7 +7,7 @@ model = pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
 
 def main():
     st.title("Translate short English text to German")
-    st.subheader("Powered by hugging face transformers created by Gabriel")
+    st.subheader("Powered by  transformers created by Gabriel")
 
     # Create an input text box
     input_text = st.text_input("Enter your text", "")
