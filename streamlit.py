@@ -28,7 +28,7 @@ def main():
 
 
 
-    else choice == "German to English":
+    else:
         input_text = st.text_input("Enter your text", "")
 
         # Create a button to trigger model inference
