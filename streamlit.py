@@ -3,8 +3,8 @@ from transformers import pipeline
 
 st.cache()
 
-eng= pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
-deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
+#eng= pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
+#3deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
 
 def main():
     st.title("Translation for short text to German")
@@ -22,6 +22,7 @@ def main():
         if st.button("Translate"):
 
         # Perform inference using the loaded model
+           eng= pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
            result = eng(input_text)
            st.write("Translated text :", result[0]['translation_text'])
 
@@ -35,6 +36,7 @@ def main():
 
         # Perform inference using the loaded model
            result = deu(input_text)
+           deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
            st.write("Translated text :", result[0]['translation_text'])
 
 
