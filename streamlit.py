@@ -10,9 +10,9 @@ def main():
     st.title("Translation ")
     st.subheader("Powered by  transformers created by Gabriel")
 
-    Languages = ["German to English", "English to German"]
+    Languages = ["German 🇩🇪 to English 🇬🇧", "English 🇬🇧 to German  🇩🇪"]
 
-    
+
 
     choice = st.selectbox("Language Option", Languages)
 
