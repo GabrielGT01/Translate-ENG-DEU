@@ -12,6 +12,8 @@ def main():
 
     Languages = ["German to English", "English to German"]
 
+    
+
     choice = st.selectbox("Language Option", Languages)
 
     if choice == "English to German":
