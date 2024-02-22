@@ -28,16 +28,15 @@ def main():
 
 
 
-    else:
+    else choice == "German to English":
         input_text = st.text_input("Enter your text", "")
 
         # Create a button to trigger model inference
         if st.button("Translate"):
-
-        # Perform inference using the loaded model
-           result = deu(input_text)
-           deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
-           st.write("Translated text :", result[0]['translation_text'])
+            # Perform inference using the loaded model
+            deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
+            result = deu(input_text)
+            st.write("Translated text :", result[0]['translation_text'])
 
 
 
