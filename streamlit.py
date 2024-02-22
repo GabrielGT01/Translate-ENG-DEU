@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-@st.cache()
+st.cache()
 
 model = pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
 
