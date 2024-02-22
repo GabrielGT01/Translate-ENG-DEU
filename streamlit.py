@@ -12,9 +12,10 @@ def main():
 
     Languages = ["German to English", "English to German"]
 
-    choice = st.sidebar.selectbox("Language", Languages)
+    choice = st.sidebar.selectbox("Language Option", Languages)
 
     if choice == "English to German":
+        st.subheader("Translating from English to German")
         # Create an input text box
         input_text = st.text_input("Enter your text", "")
 
@@ -29,6 +30,9 @@ def main():
 
 
     else:
+
+
+        st.subheader("Translating from German to English")
         input_text = st.text_input("Enter your text", "")
 
         # Create a button to trigger model inference
