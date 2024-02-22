@@ -3,8 +3,8 @@ from transformers import pipeline
 
 st.cache()
 
-eng-deu = pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
-deu-eng = pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
+eng= pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
+deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
 
 def main():
     st.title("Translation for short text to German")
