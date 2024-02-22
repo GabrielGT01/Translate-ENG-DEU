@@ -10,7 +10,7 @@ def main():
     st.title("Translation ")
     st.subheader("Powered by  transformers created by Gabriel")
 
-    Languages = ["English 🇬🇧 to German  🇩🇪,  "German 🇩🇪 to English 🇬🇧"]
+    Languages = ["English 🇬🇧 to German 🇩🇪" , "German 🇩🇪 to English 🇬🇧"]
 
 
 
