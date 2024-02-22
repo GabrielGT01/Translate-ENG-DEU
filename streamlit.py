@@ -6,8 +6,18 @@ st.cache()
 model = pipeline('translation',model = 'Helsinki-NLP/opus-mt-en-de')
 
 def main():
-    st.title("Translate short English text to German")
+    st.title("Translation for short text to German")
     st.subheader("Powered by  transformers created by Gabriel")
+
+    
+
+    Language = st.sidebar.selectbox(
+    "what language would you like to translate to"
+
+    ("German to English", "English to German")
+
+
+
 
     # Create an input text box
     input_text = st.text_input("Enter your text", "")
