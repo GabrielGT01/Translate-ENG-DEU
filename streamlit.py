@@ -7,12 +7,12 @@ st.cache()
 #3deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
 
 def main():
-    st.title("Translation for short text to German")
+    st.title("Translation ")
     st.subheader("Powered by  transformers created by Gabriel")
 
     Languages = ["German to English", "English to German"]
 
-    choice = st.sidebar.selectbox("Language Option", Languages)
+    choice = st.selectbox("Language Option", Languages)
 
     if choice == "English to German":
         st.subheader("Translating from English to German")
