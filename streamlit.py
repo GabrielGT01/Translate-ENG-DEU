@@ -10,14 +10,14 @@ def main():
     st.title("Translation ")
     st.subheader("Powered by  transformers created by Gabriel")
 
-    Languages = ["German 🇩🇪 to English 🇬🇧", "English 🇬🇧 to German  🇩🇪"]
+    Languages = ["English 🇬🇧 to German  🇩🇪 "German 🇩🇪 to English 🇬🇧"]
 
 
 
     choice = st.selectbox("Language Option", Languages)
 
     if choice == "English to German":
-        st.subheader("Translating from English to German")
+        st.subheader(" English to German")
         # Create an input text box
         input_text = st.text_input("Enter your text", "")
 
