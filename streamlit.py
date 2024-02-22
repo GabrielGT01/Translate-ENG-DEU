@@ -7,8 +7,8 @@ st.cache()
 #3deu= pipeline('translation',model = 'Helsinki-NLP/opus-mt-de-en')
 
 def main():
-    st.title("Translation ")
-    st.subheader("Powered by  transformers created by Gabriel")
+    st.title(" A Translation Web app ")
+    st.subheader("Designed for short text")
 
     Languages = ["English to German" , "German to English"]
 
